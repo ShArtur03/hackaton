@@ -1,6 +1,6 @@
 pydantic~=2.10.6
 fastapi~=0.115.8
-asyncpgasyncpg~=0.30.0
 psycopg2~=2.9.10
 SQLAlchemy~=2.0.38
 alembic~=1.14.1
+asyncpg~=0.30.0
