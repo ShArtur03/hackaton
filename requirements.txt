@@ -4,3 +4,4 @@ psycopg2~=2.9.10
 SQLAlchemy~=2.0.38
 alembic~=1.14.1
 asyncpg~=0.30.0
+unicorn~=2.1.2
