@@ -85,13 +85,13 @@ class Recommendation(Base):
 
     theme_relationship = relationship("Theme", back_populates="recommendations")
 
-    # def __str__(self):
-    #     materials = ', '.join([material.material for material in self.theme_relationship.recommendations])
-    #     return (f"{self.__class__.__name__}(theme={self.theme}, "
-    #             f"materials=[{materials}]")
-    #
-    # def __repr__(self):
-    #     return str(self)
+    def __str__(self):
+        materials = ', '.join([material.material for material in self.theme_relationship.recommendations])
+        return (f"{self.__class__.__name__}(theme={self.theme}, "
+                f"materials=[{materials}]")
+    
+    def __repr__(self):
+        return str(self)
 
 
 class Interview(Base):

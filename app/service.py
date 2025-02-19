@@ -1,4 +1,4 @@
-# Функции обработки ручек по методам API
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ API
 import json
 from typing import List, Dict
 
@@ -67,6 +67,7 @@ async def get_materials(db: AsyncSession):
 
     recommendations_list = [{"theme": rec.theme, "material": rec.material} for rec in all_recommendations]
 
+    # if (tests_with_recommendations != None):
     chosen_materials = await db.execute(select(Chosen_materials).where(Chosen_materials.id == 1))
     chosen_materials_instance = chosen_materials.scalars().first()
     chosen_materials_instance.materials = json.dumps(test_recommendations, ensure_ascii=False)
